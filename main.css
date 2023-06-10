@@ -162,7 +162,7 @@ a {
 }
 .contect {
 	display: flex;
-	margin: 0 0 0 22%;
+	margin: 0 0 0 21%;
 	align-items: center;
 	flex-basis: 50%;
 }
@@ -285,7 +285,7 @@ a {
 	transition: all .2s linear;
 }
 .foto {
-	flex-basis: 25%;
+	flex-basis: 24%;
 	padding: 1rem;
 }
 .fot {
@@ -316,7 +316,7 @@ a {
 	z-index: 101;
 }
 .video {
-	flex-basis: 25%;
+	flex-basis: 24%;
 	padding: 1rem;
 }
 .opis {
@@ -483,7 +483,7 @@ a {
     color: #000;
 }
 .cont {
-	flex-basis: 40%;
+	flex-basis: 42%;
 	margin-right: 0;
 }
 .avito {
