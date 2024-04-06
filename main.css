@@ -1,0 +1,1027 @@
+@charset "UTF-8";
+
+html {
+	font-size: 15px;
+ }
+body {
+	font-size: 16px;
+	font-size: 1rem;
+	margin: 0;
+	color: #2b2a2c;
+}
+body.no-scroll {
+	overflow: hidden;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+p {
+	margin: 0 0 1rem;
+}
+.aksi {
+	margin: 0;
+    position: absolute;
+    padding: 10px 12px;
+    background-color: #000;
+    color: #ff2b2b;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border-radius: 10px 5px 5px 5px;
+}
+.header {
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	z-index: 2000;
+}
+.fir {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.main {
+	display: block;
+	margin-top: 7.5%;
+}
+.conteiner {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.tovar {
+	padding-top: 1%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.port_del {
+	flex-basis: 25%;
+	padding: 1rem;
+}
+.port_del a {
+	text-decoration: none;
+	color:  #2b2a2c;
+}
+.port_inner {
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 4px rgba(0,0,0, 0.3);	
+	transition: box-shadow .3s linear transform .3s linear;
+}
+.port_inner:hover {
+	box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+	transform: translateY(-3px);
+}
+.port_img {
+	width: 100%;
+	height: 320px;
+	display: block;
+}
+.port_cont {
+	padding: 0.9rem;
+}
+.port_cat {
+	font-weight: 400;
+	font-size: 15px;
+}
+.port_title {
+	font-size: 20px;
+	font-weight: 700;
+	padding: 3% 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.filtr {
+	background-color: #000;
+    display: none;
+    flex-direction: column;
+    width: 18%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    align-items: center;
+    border: 2px solid;
+    z-index: 2200;
+}
+.filtr a:hover {
+	text-decoration: underline;
+}
+.filtr a{
+	cursor: pointer;
+    text-decoration: none;
+    margin: 8%;
+    font-size: 24px;
+    color: #fff;
+}
+.filtr a:first-child {
+	margin-top: 25%;
+}
+a {
+	cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+.hide {
+	display: none;
+}
+.nav-toggle {
+	display: block;
+    width: 30px;
+    padding: 10px 0;
+    display: block;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 54px;
+    right: 1.5%;
+    z-index: 1;
+}
+
+.nav-toggle:focus {
+    outline: 0;
+}
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #000;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.name {
+    margin-left: 1%;
+    flex-basis: 17%;
+}
+.name_img {
+	width: 100%;
+}
+.contect {
+	display: flex;
+	margin: 0 0 0 37%;
+    align-items: center;
+    flex-basis: 40%;
+}
+.contect a:hover {
+	text-decoration: underline;
+}
+.nazad:hover {
+	background-color: #3da9e5;
+    color: #fdfdfd;
+    box-shadow: 0 1.5px 12px rgb(52 171 203 / 70%);
+}
+.nazad {
+	display: none;
+    position: absolute;
+    top: 47px;
+    right: 1%;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 18px;
+    border: 1px solid;
+    font-size: 18px;
+    padding: 0.9%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+
+    background-color: #000;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+}
+
+.nav-toggle__item:before {
+    top: -8px;
+}
+
+.nav-toggle__item:after {
+    bottom: -8px;
+}
+
+.navi {
+	width: 30px;
+    padding: 10px 0;
+    display: none;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: fixed;
+    top: 12px;
+    right: 0.5%;
+    z-index: 2222;
+    opacity: 1;
+}
+.nav {
+	display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #000;
+    background: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.nav:before {
+    top: -8px;
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
+}
+
+.nav:after {
+    bottom: -8px;
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+}
+.nav:before,
+.nav:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.imag {
+	padding-top: 1%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.dop {
+	width: 95%;
+	position: fixed;
+	height: 95%;
+	top: 2.5%;
+	left: 2.5%;
+	display: block;
+	z-index: 100;
+	transition: all .2s linear;
+}
+.foto {
+	flex-basis: 24.5%;
+	padding: 1rem;
+}
+.fot {
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 0 4px rgba(0,0,0, 0.3);	
+	transition: box-shadow .3s linear transform .3s linear;
+}
+.fot:hover {
+	box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+	transform: translateY(-3px);
+}
+.foto_img {
+	width: 100%;
+	height: 330px;
+	display: block;
+	z-index: 100;
+	position: inherit;
+}
+.ass {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 101;
+}
+.video {
+	flex-basis: 24.5%;
+	padding: 1rem;
+}
+.opis {
+	margin: 2% 4% 3% 3%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.head {
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nam {
+    margin-left: 1%;
+    display: flex;
+    flex-basis: 17%;
+    cursor: pointer;
+}
+.name_tovar {
+	text-transform: uppercase;
+    font-size: 24px;
+    margin-left: 18%;
+    padding-top: 1%;
+    font-weight: 700;
+}
+.card_1 {
+	display: none;
+}
+.card_2 {
+	display: block;
+}
+.silka {
+	display: none;
+}
+.zakaz {
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.zak {
+	width: 50%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.zakaz_avito,
+.zakaz_avito1 {
+	margin: 4%;
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 700;
+}
+.zakaz_avito1 p,
+.zakaz_avito p {
+	margin: 0;
+	padding: 0;
+}
+.zakaz_avito1 a,
+.zakaz_avito a {
+	color: white;
+    border: 1px solid white;
+    background-color: #62b9e9;
+    padding: 1.7%;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: all .1s linear; 
+}	
+.zakaz_avito1 a:hover,
+.zakaz_avito a:hover {
+	box-shadow: 0 1.5px 12px rgb(52 171 203 / 70%);
+}
+.sale {
+	margin: 0 43% 3% 0;
+    text-decoration: none;
+    background: #001E36;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 1%;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1.2px;
+    transition: all .1s linear;
+}
+.sale:hover {
+	background: #E1E9F2;
+	color: #000;
+	box-shadow: 0 0 12px rgba(0,0,0, 1.3);
+}
+.cla {
+	display: flex;
+	justify-content: flex-end;
+}
+.esc {
+	position: absolute;
+    top: 18.5%;
+    left: 71.5%;
+    font-size: 33px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #000;
+	color: #fff;
+    text-decoration: none;
+    padding: 0 11px 2px 11px;
+    border: 1px solid;
+    border-radius: 80px;
+}
+.esc:hover {
+	background-color: #fff;
+	color: #000;
+}
+.logo1,
+.logo {
+	width: 7%;
+	margin-left: 1%;
+	margin-top: 1%;
+	cursor: pointer;
+}
+.logo1 img,
+.logo img{
+	width: 100%;
+}
+.znachok1 {
+	width: 2.8%;
+    position: absolute;
+    left: 47.2%;
+}
+.znachok2 {
+	width: 2.2%;
+    position: absolute;
+    left: 51.7%;
+}
+.znachok3 {
+	width: 1.73%;
+    position: absolute;
+    left: 50.6%;
+}
+.s_seti {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+.vid {
+	z-index: 55;
+    cursor: pointer;
+    display: block;
+    width: 24%;
+    height: 340px;
+    position: absolute;
+    right: 2%;
+    top: 140px;
+    margin: 0;
+}
+.cont,
+.avito,
+.s_seti a{
+	display: flex;
+    align-items: center;
+    color: #000;
+}
+.cont {
+	flex-basis: 42%;
+	margin-right: 0;
+}
+.avito {
+	flex-basis: 15%;
+}
+.znachok4 {
+	width: 13%;
+	margin-right: 2%;
+}
+.znachok5 {
+	width: 33%;
+}
+.znachok6 {
+	width: 12%;
+	margin-right: 1.5%;
+}
+.znachok7 {
+	width: 11%;
+	margin-right: 1.5%;
+}
+.znachok8 {
+	width: 13%;
+	margin-right: 1.5%;
+}
+.levo.lev,
+.levo2.lev,
+.pravo2.lev,
+.pravo3.lev,
+.pravo.lev {
+	display: flex;
+}
+.pravo {
+	width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: row-reverse;
+    z-index: 1003;
+    align-items: center;
+}
+.pravo2,
+.pravo3 {
+	width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1003;
+}
+.pravo img {
+	width: 6%;
+    right: 3%;
+    position: relative;
+}
+.pravo2 img,
+.pravo3 img{
+	width: 10%;
+    right: 5%;
+    position: relative;
+}
+.levo,
+.levo2 {
+	width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: none;
+    align-items: center;
+    z-index: 1003;
+}
+.levo img,
+.levo2 img{
+	width: 10%;
+    left: 5%;
+    position: relative;
+}
+
+@media screen and (max-width: 1199px) {
+	.cont {
+		flex-basis: 50%;
+	}
+	.contect {
+		margin: 0 0 0 31%;
+	}
+	.foto_img {
+		height: 300px;
+	}
+	.nazad {
+		top: 3%;
+	}
+	.zak {
+		width: 60%;
+	}
+	.esc {
+		top: 18%;
+    	left: 75.5%;
+	}
+	.vid {
+		top: 112px;
+		height: 310px;
+	}
+}
+@media screen and (max-width: 999px) {
+	.zak {
+		height: 55%;
+	}
+	.aksi {
+		font-size: 18px;
+	}
+	.tovar {
+		padding-top: 6%;
+	}
+	.esc {
+		top: 25%;
+    	left: 74.5%;
+	}
+	.zakaz_avito1,
+	.zakaz_avito {
+		width: 80%;
+		font-size: 19px;
+	}
+	.zakaz_avito1 a,
+	.zakaz_avito a {
+		font-size: 18px;
+	}
+	.name_tovar {
+		font-size: 20px;
+    	margin-left: 14%;
+	}
+	p {
+		margin: 0 0 .7rem;
+	}
+	.opis {
+		font-size: 18px;
+	}
+	.foto_img {
+		height: 265px;
+	}
+	.nazad {
+		top: 2%;
+	}
+	.znachok4 {
+		width: 11.5%;
+	}
+	.cont {
+		flex-basis: 54%;
+	}
+	.contect {
+		margin: 0 0 0 29.5%;
+	}
+	a {
+		font-size: 17px;
+	}
+	.nav-toggle {
+		top: 50px;
+	}
+	.port_del {
+		padding: .5rem;
+	}
+	.port_title {
+		font-size: 18px;
+		padding: 0;
+	}
+	.port_cont {
+		padding: .7rem;
+	}
+	.port_img {
+		height: 280px;
+	}
+	.filtr a:first-child {
+		margin-top: 45%;
+	}
+	.filtr a {
+		font-size: 20px;
+	}
+	.filtr {
+		width: 20%;
+	}
+	.vid {
+		top: 92px;
+		height: 280px;
+	}
+}
+@media screen and (max-width: 799px) {
+	.znachok6 {
+		width: 19%;
+	}
+	.znachok5 {
+		width: 37%;
+	}
+	.znachok7 {
+		width: 19.5%;
+	}
+	.znachok8 {
+		width: 21%;
+	}
+	.tovar {
+		padding-top: 8%;
+	}
+	.s_seti a{
+		flex-basis: 29%;
+    	margin: 0;
+    	margin-left: 2%;
+	}
+	.s_seti a:first-child{
+		margin: 2%;
+		margin-left: 7%;
+	}
+	a {
+		font-size: 18px;
+	}
+	.s_seti {
+		flex-basis: 60%;
+		display: flex;
+		flex-direction: row;
+    	align-items: center;
+	}
+	.avito {
+		margin-right: 0;
+		flex-basis: 12%;
+		margin-left: 0;
+	}
+	.cont {
+		flex-basis: 26%;
+	}
+	.logo {
+		width: 10%;
+    	margin-left: 2%;
+    	margin-top: 2%;
+	}
+	.name {
+    	margin: 0 0 0 11%;
+    	flex-basis: 50%;
+	}
+	.contect {
+		margin: 0;
+		flex-basis: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+	.fir {
+		flex-wrap: wrap;
+	}
+	.nav-toggle {
+		top: 26px;
+		right: 1.6%;
+	}
+	.port_del {
+		flex-basis: 50%;
+	}
+	.port_del a {
+		margin: 0;
+	}
+	.port_img {
+		height: 250px;
+	}
+	.filtr a {
+		margin: 12%;
+		font-size: 22px;
+	}
+	.filtr a:first-child {
+    	margin-top: 60%;
+	}
+	.filtr {
+		width: 25%;
+	}
+	.name_tovar {
+		margin-left: 13%;
+	}
+	.nam {
+		width: 20%;
+	}
+	.foto {
+		flex-basis: 50%;
+	}
+	.video {
+		flex-basis: 50%;
+	}
+	p {
+		margin: 0 0 .5rem;
+	}
+	.opis {
+		font-size: 16px;
+	}
+	.nazad {
+		font-size: 16px;
+    	padding: 1.5%;
+    	top: 2.5%;
+    	right: 2%;
+	}
+	.zakaz_avito1 a, 
+	.zakaz_avito a {
+    	letter-spacing: .5px;
+    	font-size: 16px;
+	}
+	.zakaz_avito, 
+	.zakaz_avito1 {
+   		margin: 3%;
+    	width: 85%;
+    	font-size: 17px;
+	}
+	.zak {
+		width: 65%;
+    	height: 40%;
+	}
+	.esc {
+		top: 30.5%;
+	}
+	.vid {
+		top: 400px;
+		width: 47%;
+	}
+}
+@media screen and (max-width: 599px) {
+	.zak {
+		width: 70%;
+		height: 55%;
+	}
+	.nav-toggle {
+    	top: 22px;
+	}
+	.tovar {
+		padding-top: 25%;
+	}
+	.aksi {
+		font-size: 16px;
+	}
+	.logo1 {
+		width: 9%;
+    	margin-top: 3%;
+	}
+	.zakaz_avito, 
+	.zakaz_avito1 {
+    	width: 90%;
+    	align-items: center;
+    	justify-content: center;
+    	font-size: 19px;
+    	flex-wrap: wrap;
+	}
+	.zakaz_avito1 a, 
+	.zakaz_avito a {
+    	font-size: 18px;
+	}
+	.zakaz_avito1 p, 
+	.zakaz_avito p {
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+	}
+	.nazad {
+		font-size: 14px;
+		padding: 1.2%;
+		top: 2%;
+	}
+	.foto {
+		padding: .5rem;
+	}
+	.foto_img {
+		height: 225px;
+	}
+	.video {
+		padding: .5rem;
+	}
+	.nam {
+		flex-basis: 20%;
+	}
+	.name_tovar {
+		font-size: 16px;
+		margin-left: 9%;
+	}
+	.opis {
+		font-size: 14px;
+	}
+	.sale {
+    	margin: 0 40% 3% 0;
+    	font-size: 15px;
+   	    padding: 1.8%;
+    	letter-spacing: .8px;
+	}
+	.name {
+		font-size: 20px;
+    	margin: 2% 0 0 10%;
+    	flex-basis: 55%;
+	}
+	.znachok4 {
+		width: 10.2%;
+	}
+	.cont {
+		margin-left: 10%;
+		flex-basis: 50%;
+		margin-bottom: 0;
+	}
+	.contect {
+		flex-wrap: wrap;
+	}
+	.avito {
+		margin-bottom: 0;
+		flex-basis: 20%;
+	}
+	.s_seti {
+		flex-basis: 100%;
+	}
+	.s_seti a{
+		flex-basis: 32%;
+		margin: 0;
+	}
+	.s_seti a:first-child {
+		margin: 2%;
+	}
+	.port_cont {
+    	padding: 0.5rem;
+	}
+	.port_title {
+    	font-size: 16px;
+	}
+	.port_img {
+		height: 200px;
+	}
+	.filtr a {
+    	margin: 22%;
+    	font-size: 17px;
+	}
+	.filtr{
+		width: 28%;
+	}
+	.nav:before, 
+	.nav:after {
+    	width: 90%;
+	}
+	.nav:after {
+		bottom: -100.5%;
+	}
+	.nav:before {
+    	top: -8.5px;
+	}
+	.nav {
+		width: 90%;
+		top: -6px;
+	}
+	.esc {
+    	top: 23.5%;
+    	padding: 0 10px 2px 10px;
+    	font-size: 26px;
+	}
+	.vid {
+		top: 320px;
+		height: 230px;
+	}
+}
+@media screen and (max-width: 499px) {
+	.vid {
+		top: 308px;
+	}
+}
+@media screen and (max-width: 399px) {
+	.zak {
+		width: 75%;
+	}
+	.zakaz_avito, 
+	.zakaz_avito1 {
+    	font-size: 15px;
+	}
+	.zakaz_avito1 a, 
+	.zakaz_avito a {
+    	font-size: 15px;
+    	letter-spacing: .2px;
+    	padding: 2.7%;
+	}
+	.esc {
+		padding: 0 8.5px 2px 8.5px;
+		font-size: 22px;
+	}
+	.nav-toggle {
+		width: 22px;
+		top: 22px;
+	}
+	.nav-toggle__item:before {
+		height: 2px;
+		top: -6px;
+	} 
+	.nav-toggle__item:after {
+		height: 2px;
+		bottom: -6px;
+	}
+	.nav-toggle__item {
+		height: 2px;
+	}
+	.navi {
+		right: -1.5%;
+	}
+	.nav:before {
+		width: 70%;
+    	height: 2%;
+    	top: -5%;
+	}
+	.nav:after {
+    	width: 70%;
+    	height: 2%;
+    	bottom: -100%;
+	}
+	.name_tovar {
+    	font-size: 14px;
+    	margin-left: 10%;
+	}
+	.nazad {
+		letter-spacing: .8px;
+		top: 15px;
+		font-size: 12px;
+	}
+	.vid {
+		top: 296px;
+	}
+
+}
